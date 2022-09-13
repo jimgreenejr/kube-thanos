@@ -6,7 +6,7 @@ local commonConfig = {
   config+:: {
     local cfg = self,
     namespace: 'monitoring',
-    version: 'v0.27.0',
+    version: 'v0.28.0',
     image: 'quay.io/thanos/thanos:' + cfg.version,
     imagePullPolicy: 'IfNotPresent',
     replicaLabels: ['prometheus_replica', 'rule_replica'],
